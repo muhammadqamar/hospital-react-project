@@ -1,0 +1,46 @@
+.modal-backdrop{
+  position: relative;
+}
+.loader {
+  border: 16px solid #fff;
+  border-radius: 50%;
+  border-top: 16px solid #333;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    BACKGROUND: #c99947;
+    BACKGROUND: #c99947;
+COLOR: WHITE;
+PADDING-TOP: 30PX;
+FONT-WEIGHT: BOLD;
+FONT-SIZE: 13PX;
+TEXT-ALIGN: CENTER;
+}
+@media only screen and (max-width: 1024px) {
+  .loader {
+    left: 40%;
+
+  }
+}
+@media only screen and (max-width: 767px) {
+  .loader {
+    left: 35%;
+
+  }
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
